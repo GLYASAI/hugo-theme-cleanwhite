@@ -26,6 +26,7 @@
     {{ end }}
 
     <!-- Short About -->
+    {{ if .Site.Params.about_me }}
     <section class="visible-md visible-lg">
         <hr><h5><a href="">ABOUT ME</a></h5>
         <div class="short-about">
@@ -130,6 +131,8 @@
                 </ul>
             </div>
     </section>
+    {{ end }}
+
     <!-- Friends Blog -->
     {{ if .Site.Params.friends }}
     <section>
